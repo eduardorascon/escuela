@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Demo CECyTECH</string>
+    <string name="app_name">Demo</string>
+    <string name="toolbar_title">CECyTECH</string>
 </resources>
