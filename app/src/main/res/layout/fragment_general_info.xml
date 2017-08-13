@@ -16,7 +16,8 @@
             android:id="@+id/icon_average"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:background="@color/primary" />
+            android:background="@drawable/image_border"
+            android:padding="1dp" />
 
         <TextView
             android:id="@+id/textView8"
@@ -54,7 +55,8 @@
             android:id="@+id/icon_abcense"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:background="@color/primary" />
+            android:background="@drawable/image_border"
+            android:padding="1dp" />
 
         <TextView
             android:id="@+id/textView9"
