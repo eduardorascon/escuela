@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="14dp"
+    tools:context="layout.GeneralInfo">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/icon_average"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/primary" />
+
+    <TextView
+        android:id="@+id/average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_toRightOf="@id/icon_average"
+        android:paddingLeft="20dp"
+        android:text="85.5"
+        android:textAlignment="textStart"
+        android:textColor="@color/secondary_text"
+        android:textSize="40sp"
+        android:textStyle="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/icon_average"
+        android:layout_toEndOf="@+id/icon_average"
+        android:paddingLeft="20dp"
+        android:text="PROMEDIO"
+        android:textAlignment="textStart"
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp"
+        android:textStyle="" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/icon_abcenses"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/icon_average"
+        android:background="@color/accent" />
+
+    <TextView
+        android:id="@+id/abcenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/icon_average"
+        android:layout_toRightOf="@id/icon_abcenses"
+        android:paddingLeft="20dp"
+        android:text="0"
+        android:textAlignment="textStart"
+        android:textColor="@color/secondary_text"
+        android:textSize="40sp"
+        android:textStyle="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/icon_abcenses"
+        android:layout_toEndOf="@+id/icon_abcenses"
+        android:paddingLeft="20dp"
+        android:text="FALTAS"
+        android:textAlignment="textStart"
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp"
+        android:textStyle="" />
+
+</RelativeLayout>
