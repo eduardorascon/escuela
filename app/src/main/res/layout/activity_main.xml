@@ -20,5 +20,92 @@
         android:layout_marginLeft="14dp"
         android:layout_marginRight="14dp"
         android:layout_marginTop="20dp"></include>
-    
+
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/student"
+        android:layout_gravity="center"
+        android:layout_margin="14dp"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="14dp"
+            android:padding="14dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icon_average"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/accent" />
+
+            <TextView
+                android:id="@+id/average"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@id/icon_average"
+                android:paddingLeft="20dp"
+                android:text="85.5"
+                android:textAlignment="textStart"
+                android:textColor="@color/secondary_text"
+                android:textSize="40sp"
+                android:textStyle="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/average"
+                android:layout_toRightOf="@id/icon_average"
+                android:paddingLeft="20dp"
+                android:text="PROMEDIO"
+                android:textAlignment="textStart"
+                android:textColor="@color/secondary_text"
+                android:textSize="20sp"
+                android:textStyle="" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icon_abcenses"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/icon_average"
+                android:background="@color/accent" />
+
+            <TextView
+                android:id="@+id/abcenses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/icon_average"
+                android:layout_toRightOf="@id/icon_abcenses"
+                android:paddingLeft="20dp"
+                android:text="0"
+                android:textAlignment="textStart"
+                android:textColor="@color/secondary_text"
+                android:textSize="40sp"
+                android:textStyle="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/abcenses"
+                android:layout_toRightOf="@id/icon_abcenses"
+                android:paddingLeft="20dp"
+                android:text="FALTAS"
+                android:textAlignment="textStart"
+                android:textColor="@color/secondary_text"
+                android:textSize="20sp"
+                android:textStyle="" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
 </android.widget.RelativeLayout>

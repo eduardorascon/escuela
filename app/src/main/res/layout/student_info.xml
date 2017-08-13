@@ -17,7 +17,7 @@
             android:text="LUIS EDUARDO RASCON FIERRO"
             android:textAlignment="textStart"
             android:textColor="@color/primary_text"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textStyle="normal" />
     </LinearLayout>
 
@@ -30,7 +30,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:text="MATRÍCULA: "
+            android:text="Plantel 6 "
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textColor="@color/secondary_text"
+            android:textSize="12sp"
+            android:textStyle="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="MATRÍCULA "
             android:textAlignment="textStart"
             android:textColor="@color/secondary_text"
             android:textSize="12sp"
@@ -42,7 +60,7 @@
             android:text="987654321"
             android:textAlignment="textStart"
             android:textColor="@color/secondary_text"
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:textStyle="" />
     </LinearLayout>
 
