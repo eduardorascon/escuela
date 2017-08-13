@@ -1,111 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/activity_background_color"
+    android:fitsSystemWindows="true"
     tools:context="com.eduardorascon.demoescuela.MainActivity">
 
-    <include
+    <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
-        layout="@layout/main_toolbar"></include>
-
-    <include
-        android:id="@+id/student"
-        layout="@layout/student_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"
-        android:layout_marginLeft="14dp"
-        android:layout_marginRight="14dp"
-        android:layout_marginTop="20dp"></include>
-
-    <!-- A CardView that contains a TextView -->
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/student"
-        android:layout_gravity="center"
-        android:layout_margin="14dp"
-        card_view:cardCornerRadius="4dp">
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:contentInsetEnd="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/PopupOverlay">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="14dp"
-            android:padding="14dp">
+            android:background="@color/primary"
+            android:orientation="vertical">
 
-            <android.support.v7.widget.AppCompatImageView
-                android:id="@+id/icon_average"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginBottom="20dp"
-                android:background="@color/accent" />
-
-            <TextView
-                android:id="@+id/average"
-                android:layout_width="wrap_content"
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
 
-                android:layout_toRightOf="@id/icon_average"
-                android:paddingLeft="20dp"
-                android:text="85.5"
-                android:textAlignment="textStart"
-                android:textColor="@color/secondary_text"
-                android:textSize="40sp"
-                android:textStyle="" />
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
 
-            <TextView
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/toolbar_title"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="28sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plantel 6 "
+                    android:textAlignment="textStart"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:gravity="start"
+                android:orientation="vertical">
 
-                android:layout_below="@id/average"
-                android:layout_toRightOf="@id/icon_average"
-                android:paddingLeft="20dp"
-                android:text="PROMEDIO"
-                android:textAlignment="textStart"
-                android:textColor="@color/secondary_text"
-                android:textSize="20sp"
-                android:textStyle="" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LUIS EDUARDO RASCON FIERRO"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
 
-            <android.support.v7.widget.AppCompatImageView
-                android:id="@+id/icon_abcenses"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_below="@id/icon_average"
-                android:background="@color/accent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
 
-            <TextView
-                android:id="@+id/abcenses"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                    android:text="MATRÍCULA 987654321"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="" />
 
-                android:layout_below="@id/icon_average"
-                android:layout_toRightOf="@id/icon_abcenses"
-                android:paddingLeft="20dp"
-                android:text="0"
-                android:textAlignment="textStart"
-                android:textColor="@color/secondary_text"
-                android:textSize="40sp"
-                android:textStyle="" />
+            </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+        </LinearLayout>
 
-                android:layout_below="@id/abcenses"
-                android:layout_toRightOf="@id/icon_abcenses"
-                android:paddingLeft="20dp"
-                android:text="FALTAS"
-                android:textAlignment="textStart"
-                android:textColor="@color/secondary_text"
-                android:textSize="20sp"
-                android:textStyle="" />
+    </android.support.v7.widget.Toolbar>
 
-        </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:background="@color/primary"
+        app:tabTextColor="@color/title_text_color" />
 
-    </android.support.v7.widget.CardView>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabs"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-</android.widget.RelativeLayout>
+</RelativeLayout>
